@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Incident 2014</title>
+</head>
+<link rel="stylesheet" href="css/main.css"/>
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+<link rel="stylesheet" href="css/onepage-scroll.css"/>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.onepage-scroll.js"></script>
+<script src="js/main.js"></script>
+<body>
+<div id="main-container">
+  <div id="menu" class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-1">About Us</div>
+    <div class="col-md-1">iCare</div>
+    
+    <div class="col-md-1" data-goto="3">Gallery</div>
+    <div class="col-md-4" id="logo" data-goto="1"><img src="img/logo.png"/></div>
+    <div class="col-md-1" data-goto="4">Brochure</div>
+    <div class="col-md-1" data-goto="2">Sponsors</div>
+    <div class="col-md-1" data-goto="5">Contact</div>
+    
+    <div class="col-md-1"></div>
+  </div>
+  <div class="row" >
+    <div id="wrapper">
+      <section id="home">
+        <div class="jumbotron">
+          <div class="col-md-4">
+            <h1>Incident</h1>
+            National Institute of Technology Karnataka </div>
+          <div class="col-md-4" > </div>
+          <div class="col-md-4"> </div>
+        </div>
+      </section>
+      <section id="sponsors"> 2</section>
+      <section id = "gallery"> 3</section>
+      <section id="brochure"> 4</section>
+      <section  id="contact"> 5</section>
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+ $(document).ready(function(){
+      $("#wrapper").onepage_scroll({
+        sectionContainer: "section",
+		responsiveFallback: 600
+      });
+	});
+</script>
+</html>
